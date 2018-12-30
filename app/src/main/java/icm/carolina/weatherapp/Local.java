@@ -1,9 +1,13 @@
 package icm.carolina.weatherapp;
 
+import android.arch.persistence.room.Entity;
+import android.arch.persistence.room.PrimaryKey;
+import android.support.annotation.NonNull;
+
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
-public class District {
+public class Local {
 
     @SerializedName("idRegiao")
     @Expose

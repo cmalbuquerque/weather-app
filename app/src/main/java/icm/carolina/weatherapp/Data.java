@@ -42,6 +42,18 @@ public class Data {
     private String forecastDate;
 
 
+    public Data(String precipitaProb, String tMin, String tMax, String predWindDir, int idWeatherType, int classWindSpeed, String longitude, String latitude, String forecastDate) {
+        this.precipitaProb = precipitaProb;
+        this.tMin = tMin;
+        this.tMax = tMax;
+        this.predWindDir = predWindDir;
+        this.idWeatherType = idWeatherType;
+        this.classWindSpeed = classWindSpeed;
+        this.longitude = longitude;
+        this.latitude = latitude;
+        this.forecastDate = forecastDate;
+    }
+
     public String getPrecipitaProb() {
         return precipitaProb;
     }

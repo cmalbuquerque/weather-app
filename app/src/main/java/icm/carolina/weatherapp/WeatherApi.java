@@ -1,7 +1,5 @@
 package icm.carolina.weatherapp;
 
-import java.util.List;
-
 import retrofit2.Call;
 import retrofit2.http.GET;
 import retrofit2.http.Path;
@@ -14,5 +12,5 @@ public interface WeatherApi {
     Call<Weather> getWeather(@Path("localId") int localId);
 
     @GET("open-data/distrits-islands.json")
-    Call<District> getLocais();
+    Call<Local> getLocais();
 }

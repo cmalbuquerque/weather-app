@@ -18,6 +18,7 @@ import android.widget.TextView;
 import org.w3c.dom.Text;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -31,7 +32,7 @@ public class MainActivity extends AppCompatActivity
     private static final String BASE_URL = "http://api.ipma.pt/";
     private static final String TAG = "MainActivity";
 
-    ArrayList<Data> dataList;
+    List<Data> dataList;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

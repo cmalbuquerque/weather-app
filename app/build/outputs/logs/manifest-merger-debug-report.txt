@@ -8,15 +8,15 @@ MERGED from [com.android.support:design:28.0.0] /home/carolina/.gradle/caches/tr
 MERGED from [com.android.support:appcompat-v7:28.0.0] /home/carolina/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/0521350e33f8c965648e6f10fdae28d6/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /home/carolina/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/90342c90c020f7ca238ae01c79ed84dd/AndroidManifest.xml:2:1-11:12
 MERGED from [com.android.support:support-v4:28.0.0] /home/carolina/.gradle/caches/transforms-1/files-1.1/support-v4-28.0.0.aar/9cf1c4fedf02342772f787d9c2cf1fec/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-fragment:28.0.0] /home/carolina/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/898d7538b250f1d257aeb16fda8b3f22/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.persistence.room:runtime:1.0.0] /home/carolina/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/c7c35bfc481b46db3f63fbb10c717913/AndroidManifest.xml:17:1-24:12
+MERGED from [android.arch.lifecycle:extensions:1.1.0] /home/carolina/.gradle/caches/transforms-1/files-1.1/extensions-1.1.0.aar/e47815fee002b7ef3e62b9c7390e2e56/AndroidManifest.xml:17:1-30:12
 MERGED from [com.android.support:animated-vector-drawable:28.0.0] /home/carolina/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/7541f646b84bc00dc398b914b766e4b2/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:recyclerview-v7:28.0.0] /home/carolina/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-28.0.0.aar/4e964fcb397e57c9605e39bc05fe8242/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-core-ui:28.0.0] /home/carolina/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/863dedd2f7c62a72d34daa5dc79d43d0/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-core-utils:28.0.0] /home/carolina/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/68adee542e926809dce3f20ea4a2bb2f/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-vector-drawable:28.0.0] /home/carolina/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/980d1f6012b2eb1918480f920c395fe3/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-media-compat:28.0.0] /home/carolina/.gradle/caches/transforms-1/files-1.1/support-media-compat-28.0.0.aar/3e7542f88cae13c84514b4b6faa6f1f9/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:recyclerview-v7:28.0.0] /home/carolina/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-28.0.0.aar/4e964fcb397e57c9605e39bc05fe8242/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-fragment:28.0.0] /home/carolina/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/898d7538b250f1d257aeb16fda8b3f22/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:28.0.0] /home/carolina/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/863dedd2f7c62a72d34daa5dc79d43d0/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:transition:28.0.0] /home/carolina/.gradle/caches/transforms-1/files-1.1/transition-28.0.0.aar/1d71addcabcf53b0b600d0e56eff55e5/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:loader:28.0.0] /home/carolina/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/a40ce787785de370c13a6c272ad1494e/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:viewpager:28.0.0] /home/carolina/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/b2c35695660f92a1f0805162b383e3f2/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:coordinatorlayout:28.0.0] /home/carolina/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/2f9d7bd063b0db91fb783b4ccfd8c93f/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:drawerlayout:28.0.0] /home/carolina/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0.aar/2b9171f26b896a6cf352783887e515f5/AndroidManifest.xml:17:1-22:12
@@ -24,16 +24,20 @@ MERGED from [com.android.support:slidingpanelayout:28.0.0] /home/carolina/.gradl
 MERGED from [com.android.support:customview:28.0.0] /home/carolina/.gradle/caches/transforms-1/files-1.1/customview-28.0.0.aar/557cace8b1ae61c76429fa50fd4b5a84/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:swiperefreshlayout:28.0.0] /home/carolina/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0.aar/2dc1912d487fb958745e4f13c23b6418/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:asynclayoutinflater:28.0.0] /home/carolina/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/d9ce62fd3e078c56a29cab67b6ec04c5/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:28.0.0] /home/carolina/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/68adee542e926809dce3f20ea4a2bb2f/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:loader:28.0.0] /home/carolina/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/a40ce787785de370c13a6c272ad1494e/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-compat:28.0.0] /home/carolina/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/978b99e2ada0091d00c0f07b0df37bed/AndroidManifest.xml:17:1-24:12
 MERGED from [com.android.support:versionedparcelable:28.0.0] /home/carolina/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/2b0915143c0d10098916e24849832cc1/AndroidManifest.xml:17:1-25:12
 MERGED from [com.android.support:cursoradapter:28.0.0] /home/carolina/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/91d8f5af5c734a45c9628e52ec324e3e/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:cardview-v7:28.0.0] /home/carolina/.gradle/caches/transforms-1/files-1.1/cardview-v7-28.0.0.aar/8745ec9d697b4178b726e842f3f0c6e0/AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:runtime:1.1.1] /home/carolina/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/6b4acd18606162c43b13dd40c85e3e27/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.persistence:db-framework:1.0.0] /home/carolina/.gradle/caches/transforms-1/files-1.1/db-framework-1.0.0.aar/1468f9c4091b1fbef77b48bf7b64f7c7/AndroidManifest.xml:17:1-24:12
+MERGED from [android.arch.persistence:db:1.0.0] /home/carolina/.gradle/caches/transforms-1/files-1.1/db-1.0.0.aar/2dcf92ee702bd37fe4850670c4f380a2/AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:interpolator:28.0.0] /home/carolina/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/e9e92af0c3ce22ea7cc94040228751ff/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:documentfile:28.0.0] /home/carolina/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/2db6a2ca06ef053ea9c9ad197b7b83d9/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:localbroadcastmanager:28.0.0] /home/carolina/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/079c983081938c3f2b18d2e4146c9b4b/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:print:28.0.0] /home/carolina/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/289c0c370bbae01b6b2470c1b25c4933/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /home/carolina/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/6b4acd18606162c43b13dd40c85e3e27/AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /home/carolina/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/55400166fab086e26dd4accda936e809/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:interpolator:28.0.0] /home/carolina/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/e9e92af0c3ce22ea7cc94040228751ff/AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.lifecycle:livedata:1.1.1] /home/carolina/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/4430921ee91c7ce6c9ac54fac75903cc/AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /home/carolina/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/f61bba5db330a43134ccaedc562b9d71/AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.core:runtime:1.1.1] /home/carolina/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/a6d4fe5da0b3b2840e27a326f427013a/AndroidManifest.xml:17:1-22:12
@@ -64,6 +68,8 @@ MERGED from [com.android.support:design:28.0.0] /home/carolina/.gradle/caches/tr
 MERGED from [com.android.support:design:28.0.0] /home/carolina/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/27d2dc1a05f423ae794a7a40b0320d35/AndroidManifest.xml:22:5-20
 MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /home/carolina/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/90342c90c020f7ca238ae01c79ed84dd/AndroidManifest.xml:9:5-20
 MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /home/carolina/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/90342c90c020f7ca238ae01c79ed84dd/AndroidManifest.xml:9:5-20
+MERGED from [android.arch.lifecycle:extensions:1.1.0] /home/carolina/.gradle/caches/transforms-1/files-1.1/extensions-1.1.0.aar/e47815fee002b7ef3e62b9c7390e2e56/AndroidManifest.xml:22:5-28:19
+MERGED from [android.arch.lifecycle:extensions:1.1.0] /home/carolina/.gradle/caches/transforms-1/files-1.1/extensions-1.1.0.aar/e47815fee002b7ef3e62b9c7390e2e56/AndroidManifest.xml:22:5-28:19
 MERGED from [com.android.support:support-compat:28.0.0] /home/carolina/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/978b99e2ada0091d00c0f07b0df37bed/AndroidManifest.xml:22:5-94
 MERGED from [com.android.support:support-compat:28.0.0] /home/carolina/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/978b99e2ada0091d00c0f07b0df37bed/AndroidManifest.xml:22:5-94
 MERGED from [com.android.support:versionedparcelable:28.0.0] /home/carolina/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/2b0915143c0d10098916e24849832cc1/AndroidManifest.xml:22:5-23:19
@@ -112,24 +118,24 @@ MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /home/carol
 MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /home/carolina/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/90342c90c020f7ca238ae01c79ed84dd/AndroidManifest.xml:5:5-7:41
 MERGED from [com.android.support:support-v4:28.0.0] /home/carolina/.gradle/caches/transforms-1/files-1.1/support-v4-28.0.0.aar/9cf1c4fedf02342772f787d9c2cf1fec/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-v4:28.0.0] /home/carolina/.gradle/caches/transforms-1/files-1.1/support-v4-28.0.0.aar/9cf1c4fedf02342772f787d9c2cf1fec/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-fragment:28.0.0] /home/carolina/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/898d7538b250f1d257aeb16fda8b3f22/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-fragment:28.0.0] /home/carolina/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/898d7538b250f1d257aeb16fda8b3f22/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.persistence.room:runtime:1.0.0] /home/carolina/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/c7c35bfc481b46db3f63fbb10c717913/AndroidManifest.xml:20:5-22:41
+MERGED from [android.arch.persistence.room:runtime:1.0.0] /home/carolina/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/c7c35bfc481b46db3f63fbb10c717913/AndroidManifest.xml:20:5-22:41
+MERGED from [android.arch.lifecycle:extensions:1.1.0] /home/carolina/.gradle/caches/transforms-1/files-1.1/extensions-1.1.0.aar/e47815fee002b7ef3e62b9c7390e2e56/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:extensions:1.1.0] /home/carolina/.gradle/caches/transforms-1/files-1.1/extensions-1.1.0.aar/e47815fee002b7ef3e62b9c7390e2e56/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:animated-vector-drawable:28.0.0] /home/carolina/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/7541f646b84bc00dc398b914b766e4b2/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:animated-vector-drawable:28.0.0] /home/carolina/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/7541f646b84bc00dc398b914b766e4b2/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:recyclerview-v7:28.0.0] /home/carolina/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-28.0.0.aar/4e964fcb397e57c9605e39bc05fe8242/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:recyclerview-v7:28.0.0] /home/carolina/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-28.0.0.aar/4e964fcb397e57c9605e39bc05fe8242/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:28.0.0] /home/carolina/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/863dedd2f7c62a72d34daa5dc79d43d0/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:28.0.0] /home/carolina/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/863dedd2f7c62a72d34daa5dc79d43d0/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-utils:28.0.0] /home/carolina/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/68adee542e926809dce3f20ea4a2bb2f/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-utils:28.0.0] /home/carolina/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/68adee542e926809dce3f20ea4a2bb2f/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-vector-drawable:28.0.0] /home/carolina/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/980d1f6012b2eb1918480f920c395fe3/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-vector-drawable:28.0.0] /home/carolina/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/980d1f6012b2eb1918480f920c395fe3/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-media-compat:28.0.0] /home/carolina/.gradle/caches/transforms-1/files-1.1/support-media-compat-28.0.0.aar/3e7542f88cae13c84514b4b6faa6f1f9/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-media-compat:28.0.0] /home/carolina/.gradle/caches/transforms-1/files-1.1/support-media-compat-28.0.0.aar/3e7542f88cae13c84514b4b6faa6f1f9/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:28.0.0] /home/carolina/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-28.0.0.aar/4e964fcb397e57c9605e39bc05fe8242/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:28.0.0] /home/carolina/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-28.0.0.aar/4e964fcb397e57c9605e39bc05fe8242/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] /home/carolina/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/898d7538b250f1d257aeb16fda8b3f22/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] /home/carolina/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/898d7538b250f1d257aeb16fda8b3f22/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] /home/carolina/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/863dedd2f7c62a72d34daa5dc79d43d0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] /home/carolina/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/863dedd2f7c62a72d34daa5dc79d43d0/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:transition:28.0.0] /home/carolina/.gradle/caches/transforms-1/files-1.1/transition-28.0.0.aar/1d71addcabcf53b0b600d0e56eff55e5/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:transition:28.0.0] /home/carolina/.gradle/caches/transforms-1/files-1.1/transition-28.0.0.aar/1d71addcabcf53b0b600d0e56eff55e5/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:loader:28.0.0] /home/carolina/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/a40ce787785de370c13a6c272ad1494e/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:loader:28.0.0] /home/carolina/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/a40ce787785de370c13a6c272ad1494e/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:viewpager:28.0.0] /home/carolina/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/b2c35695660f92a1f0805162b383e3f2/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:viewpager:28.0.0] /home/carolina/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/b2c35695660f92a1f0805162b383e3f2/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:coordinatorlayout:28.0.0] /home/carolina/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/2f9d7bd063b0db91fb783b4ccfd8c93f/AndroidManifest.xml:20:5-44
@@ -144,6 +150,10 @@ MERGED from [com.android.support:swiperefreshlayout:28.0.0] /home/carolina/.grad
 MERGED from [com.android.support:swiperefreshlayout:28.0.0] /home/carolina/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0.aar/2dc1912d487fb958745e4f13c23b6418/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:asynclayoutinflater:28.0.0] /home/carolina/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/d9ce62fd3e078c56a29cab67b6ec04c5/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:asynclayoutinflater:28.0.0] /home/carolina/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/d9ce62fd3e078c56a29cab67b6ec04c5/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] /home/carolina/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/68adee542e926809dce3f20ea4a2bb2f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] /home/carolina/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/68adee542e926809dce3f20ea4a2bb2f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] /home/carolina/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/a40ce787785de370c13a6c272ad1494e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] /home/carolina/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/a40ce787785de370c13a6c272ad1494e/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-compat:28.0.0] /home/carolina/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/978b99e2ada0091d00c0f07b0df37bed/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-compat:28.0.0] /home/carolina/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/978b99e2ada0091d00c0f07b0df37bed/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:versionedparcelable:28.0.0] /home/carolina/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/2b0915143c0d10098916e24849832cc1/AndroidManifest.xml:20:5-44
@@ -152,18 +162,22 @@ MERGED from [com.android.support:cursoradapter:28.0.0] /home/carolina/.gradle/ca
 MERGED from [com.android.support:cursoradapter:28.0.0] /home/carolina/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/91d8f5af5c734a45c9628e52ec324e3e/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:cardview-v7:28.0.0] /home/carolina/.gradle/caches/transforms-1/files-1.1/cardview-v7-28.0.0.aar/8745ec9d697b4178b726e842f3f0c6e0/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:cardview-v7:28.0.0] /home/carolina/.gradle/caches/transforms-1/files-1.1/cardview-v7-28.0.0.aar/8745ec9d697b4178b726e842f3f0c6e0/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:runtime:1.1.1] /home/carolina/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/6b4acd18606162c43b13dd40c85e3e27/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:runtime:1.1.1] /home/carolina/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/6b4acd18606162c43b13dd40c85e3e27/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.persistence:db-framework:1.0.0] /home/carolina/.gradle/caches/transforms-1/files-1.1/db-framework-1.0.0.aar/1468f9c4091b1fbef77b48bf7b64f7c7/AndroidManifest.xml:20:5-22:41
+MERGED from [android.arch.persistence:db-framework:1.0.0] /home/carolina/.gradle/caches/transforms-1/files-1.1/db-framework-1.0.0.aar/1468f9c4091b1fbef77b48bf7b64f7c7/AndroidManifest.xml:20:5-22:41
+MERGED from [android.arch.persistence:db:1.0.0] /home/carolina/.gradle/caches/transforms-1/files-1.1/db-1.0.0.aar/2dcf92ee702bd37fe4850670c4f380a2/AndroidManifest.xml:20:5-22:41
+MERGED from [android.arch.persistence:db:1.0.0] /home/carolina/.gradle/caches/transforms-1/files-1.1/db-1.0.0.aar/2dcf92ee702bd37fe4850670c4f380a2/AndroidManifest.xml:20:5-22:41
+MERGED from [com.android.support:interpolator:28.0.0] /home/carolina/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/e9e92af0c3ce22ea7cc94040228751ff/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] /home/carolina/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/e9e92af0c3ce22ea7cc94040228751ff/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:documentfile:28.0.0] /home/carolina/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/2db6a2ca06ef053ea9c9ad197b7b83d9/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:documentfile:28.0.0] /home/carolina/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/2db6a2ca06ef053ea9c9ad197b7b83d9/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:localbroadcastmanager:28.0.0] /home/carolina/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/079c983081938c3f2b18d2e4146c9b4b/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:localbroadcastmanager:28.0.0] /home/carolina/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/079c983081938c3f2b18d2e4146c9b4b/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:print:28.0.0] /home/carolina/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/289c0c370bbae01b6b2470c1b25c4933/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:print:28.0.0] /home/carolina/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/289c0c370bbae01b6b2470c1b25c4933/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /home/carolina/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/6b4acd18606162c43b13dd40c85e3e27/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /home/carolina/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/6b4acd18606162c43b13dd40c85e3e27/AndroidManifest.xml:20:5-44
 MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /home/carolina/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/55400166fab086e26dd4accda936e809/AndroidManifest.xml:20:5-44
 MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /home/carolina/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/55400166fab086e26dd4accda936e809/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:interpolator:28.0.0] /home/carolina/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/e9e92af0c3ce22ea7cc94040228751ff/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:interpolator:28.0.0] /home/carolina/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/e9e92af0c3ce22ea7cc94040228751ff/AndroidManifest.xml:20:5-44
 MERGED from [android.arch.lifecycle:livedata:1.1.1] /home/carolina/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/4430921ee91c7ce6c9ac54fac75903cc/AndroidManifest.xml:20:5-44
 MERGED from [android.arch.lifecycle:livedata:1.1.1] /home/carolina/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/4430921ee91c7ce6c9ac54fac75903cc/AndroidManifest.xml:20:5-44
 MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /home/carolina/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/f61bba5db330a43134ccaedc562b9d71/AndroidManifest.xml:20:5-44
@@ -180,3 +194,13 @@ INJECTED from /home/carolina/AndroidStudioProjects/WeatherApp/app/src/main/Andro
 		INJECTED from /home/carolina/AndroidStudioProjects/WeatherApp/app/src/main/AndroidManifest.xml
 		ADDED from /home/carolina/AndroidStudioProjects/WeatherApp/app/src/main/AndroidManifest.xml
 		INJECTED from /home/carolina/AndroidStudioProjects/WeatherApp/app/src/main/AndroidManifest.xml
+provider#android.arch.lifecycle.ProcessLifecycleOwnerInitializer
+ADDED from [android.arch.lifecycle:extensions:1.1.0] /home/carolina/.gradle/caches/transforms-1/files-1.1/extensions-1.1.0.aar/e47815fee002b7ef3e62b9c7390e2e56/AndroidManifest.xml:23:9-27:43
+	android:authorities
+		ADDED from [android.arch.lifecycle:extensions:1.1.0] /home/carolina/.gradle/caches/transforms-1/files-1.1/extensions-1.1.0.aar/e47815fee002b7ef3e62b9c7390e2e56/AndroidManifest.xml:25:13-68
+	android:multiprocess
+		ADDED from [android.arch.lifecycle:extensions:1.1.0] /home/carolina/.gradle/caches/transforms-1/files-1.1/extensions-1.1.0.aar/e47815fee002b7ef3e62b9c7390e2e56/AndroidManifest.xml:27:13-40
+	android:exported
+		ADDED from [android.arch.lifecycle:extensions:1.1.0] /home/carolina/.gradle/caches/transforms-1/files-1.1/extensions-1.1.0.aar/e47815fee002b7ef3e62b9c7390e2e56/AndroidManifest.xml:26:13-37
+	android:name
+		ADDED from [android.arch.lifecycle:extensions:1.1.0] /home/carolina/.gradle/caches/transforms-1/files-1.1/extensions-1.1.0.aar/e47815fee002b7ef3e62b9c7390e2e56/AndroidManifest.xml:24:13-83

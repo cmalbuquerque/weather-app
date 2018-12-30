@@ -1,10 +1,16 @@
 package icm.carolina.weatherapp;
 
+import android.arch.persistence.room.Entity;
+import android.arch.persistence.room.PrimaryKey;
+import android.support.annotation.NonNull;
+
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
 import java.util.ArrayList;
+import java.util.List;
 
+@Entity
 public class Weather {
 
     @SerializedName("owner")
@@ -17,8 +23,10 @@ public class Weather {
 
     @SerializedName("data")
     @Expose
-    private ArrayList<Data> data;
+    private List<Data> data;
 
+    @PrimaryKey
+    @NonNull
     @SerializedName("globalIdLocal")
     @Expose
     private int globalIdLocal;
@@ -43,11 +51,11 @@ public class Weather {
         this.country = country;
     }
 
-    public ArrayList<Data> getData() {
+    public List<Data> getData() {
         return data;
     }
 
-    public void setData(ArrayList<Data> data) {
+    public void setData(List<Data> data) {
         this.data = data;
     }
 
