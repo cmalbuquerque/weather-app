@@ -10,7 +10,7 @@ public class WeatherRepository {
 
     private static int FRESH_TIMEOUT_IN_MINUTES = 15;
 
-    private  WeatherApi weatherApi;
+    private WeatherApi weatherApi;
     private WeatherDao mWeatherDao;
     private LiveData<List<Weather>> mAllWeather;
 

@@ -3,6 +3,8 @@ package icm.carolina.weatherapp;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.View;
 import android.support.design.widget.NavigationView;
@@ -18,8 +20,11 @@ import android.widget.TextView;
 import org.w3c.dom.Text;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
+import icm.carolina.weatherapp.others.MyRecyclerViewAdapter;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -31,6 +36,11 @@ public class MainActivity extends AppCompatActivity
 
     private static final String BASE_URL = "http://api.ipma.pt/";
     private static final String TAG = "MainActivity";
+
+    private RecyclerView mRecyclerView;
+    private RecyclerView.Adapter mAdapter;
+    private RecyclerView.LayoutManager mLayoutManager;
+    private static String LOG_TAG = "MainActivity";
 
     List<Data> dataList;
 
@@ -59,39 +69,15 @@ public class MainActivity extends AppCompatActivity
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
-        Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl(BASE_URL)
-                .addConverterFactory(GsonConverterFactory.create())
-                .build();
+        mRecyclerView = (RecyclerView) findViewById(R.id.my_recycler_view_results);
 
-        WeatherApi weatherApi = retrofit.create(WeatherApi.class);
+        mRecyclerView.setHasFixedSize(true);
 
-        Call<Weather> call = weatherApi.getWeather(1110600);
+        mLayoutManager = new LinearLayoutManager(this);
+        mRecyclerView.setLayoutManager(mLayoutManager);
 
-        call.enqueue(new Callback<Weather>() {
-            @Override
-            public void onResponse(Call<Weather> call, Response<Weather> response) {
-                Log.d(TAG, "onResponse: " + response.body().toString());
-                dataList = response.body().getData();
-
-                for (int i = 0; i<dataList.size(); i++){
-                    Log.d(TAG, "onResponse: " +
-                            "\nprecipitaProb: " + dataList.get(i).getPrecipitaProb() +
-                            "\ntMin: " + dataList.get(i).gettMin() +
-                            "\ntMax: " + dataList.get(i).gettMax());
-                };
-                TextView local = (TextView) findViewById(R.id.localAtual);
-                local.setText(""+response.body().getGlobalIdLocal());
-                TextView txt = (TextView) findViewById(R.id.textView);
-                txt.setText(""+dataList.get(dataList.size()-1).gettMax()+"ºC\t"+dataList.get(dataList.size()-1).gettMin()+"ºC");
-            }
-
-            @Override
-            public void onFailure(Call<Weather> call, Throwable t) {
-                Log.d(TAG, "onFailure: Something went wrong!");
-            }
-        });
-
+        getData();
+        //presentToUser();
 
 
     }
@@ -152,4 +138,61 @@ public class MainActivity extends AppCompatActivity
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
+
+    /*
+    private void presentToUser() {
+        mAdapter = new MyRecyclerViewAdapter(getDataSet());
+        mRecyclerView.setAdapter(mAdapter);
+    }
+    */
+
+    /*private List<Weather> getDataSet() {
+        List <Weather> results = new ArrayList<>();
+        if (dados.size() != 0) {
+            for (Map.Entry<Integer, Weather> i : dados.entrySet()) {
+                results.add(i.getValue());
+            }
+        }
+        return results;
+    }
+    */
+
+
+    private void getData () {
+        Retrofit retrofit = new Retrofit.Builder()
+                .baseUrl(BASE_URL)
+                .addConverterFactory(GsonConverterFactory.create())
+                .build();
+
+        WeatherApi weatherApi = retrofit.create(WeatherApi.class);
+
+        Call<Weather> call = weatherApi.getWeather(1110600);
+        Map<Integer, Weather> dados_aux = new HashMap<>();
+
+        call.enqueue(new Callback<Weather>() {
+            @Override
+            public void onResponse(Call<Weather> call, Response<Weather> response) {
+                Log.d(TAG, "onResponse: " + response.body().toString());
+                dataList = response.body().getData();
+
+                for (int i = 0; i<dataList.size(); i++){
+                    Log.d(TAG, "onResponse: " +
+                            "\nprecipitaProb: " + dataList.get(i).getPrecipitaProb() +
+                            "\ntMin: " + dataList.get(i).gettMin() +
+                            "\ntMax: " + dataList.get(i).gettMax());
+                };
+                TextView local = (TextView) findViewById(R.id.localAtual);
+                local.setText(""+response.body().getGlobalIdLocal());
+                TextView txt = (TextView) findViewById(R.id.textView);
+                txt.setText(""+dataList.get(dataList.size()-1).gettMax()+"ºC\t"+dataList.get(dataList.size()-1).gettMin()+"ºC");
+            }
+
+            @Override
+            public void onFailure(Call<Weather> call, Throwable t) {
+                Log.d(TAG, "onFailure: Something went wrong!");
+            }
+        });
+
+    }
+
 }

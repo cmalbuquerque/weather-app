@@ -1080,6 +1080,7 @@ id blocking
 id bottom
 id buttonPanel
 id cancel_action
+id card_view
 id center
 id center_horizontal
 id center_vertical
@@ -1131,13 +1132,19 @@ id icon
 id icon_group
 id ifRoom
 id image
+id imageActivity
+id imageDate
+id imageLayout
+id imageTime
 id imageView
+id imageViewActivity
 id info
 id invisible
 id italic
 id item_touch_helper_previous_elevation
 id labeled
 id largeLabel
+id layoutIcons
 id left
 id line1
 id line3
@@ -1152,6 +1159,7 @@ id mini
 id mtrl_child_content_container
 id mtrl_internal_children_alpha_tag
 id multiply
+id my_recycler_view_results
 id nav_camera
 id nav_gallery
 id nav_manage
@@ -1229,9 +1237,13 @@ id tag_unhandled_key_event_manager
 id tag_unhandled_key_listeners
 id text
 id text2
+id textDistrict
+id textPrecipita
 id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
+id textTMax
+id textTMin
 id textView
 id text_input_password_toggle
 id textinput_counter
@@ -1308,6 +1320,7 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_main
 layout app_bar_main
+layout card_view_row_main
 layout content_main
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
