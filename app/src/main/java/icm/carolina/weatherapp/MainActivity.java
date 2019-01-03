@@ -1,11 +1,13 @@
 package icm.carolina.weatherapp;
 
+import android.arch.lifecycle.Observer;
+import android.arch.lifecycle.ViewModelProviders;
 import android.os.Bundle;
+import android.support.annotation.Nullable;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -15,51 +17,26 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.TextView;
-
-import org.w3c.dom.Text;
-
-import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
-import icm.carolina.weatherapp.others.MyRecyclerViewAdapter;
-import retrofit2.Call;
-import retrofit2.Callback;
-import retrofit2.Response;
-import retrofit2.Retrofit;
-import retrofit2.converter.gson.GsonConverterFactory;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
-    private static final String BASE_URL = "http://api.ipma.pt/";
-    private static final String TAG = "MainActivity";
-
     private RecyclerView mRecyclerView;
-    private RecyclerView.Adapter mAdapter;
-    private RecyclerView.LayoutManager mLayoutManager;
-    private static String LOG_TAG = "MainActivity";
+    private WeatherViewModel mWeatherViewModel;
 
-    List<Data> dataList;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        /** ToolBar **/
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
-
+        /** Drawer Menu **/
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
@@ -69,16 +46,34 @@ public class MainActivity extends AppCompatActivity
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
-        mRecyclerView = (RecyclerView) findViewById(R.id.my_recycler_view_results);
 
-        mRecyclerView.setHasFixedSize(true);
+        /** RecyclerView */
+        mRecyclerView = findViewById(R.id.my_recycler_view_results);
 
-        mLayoutManager = new LinearLayoutManager(this);
-        mRecyclerView.setLayoutManager(mLayoutManager);
+        final WeatherAdapter adapter = new WeatherAdapter(this);
+        mRecyclerView.setAdapter(adapter);
+        mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
 
-        getData();
-        //presentToUser();
+        mWeatherViewModel = ViewModelProviders.of(this).get(WeatherViewModel.class);
 
+        mWeatherViewModel.getWeather(1010500).observe(this, new Observer<List<Weather>>() {
+            @Override
+            public void onChanged(@Nullable final List<Weather> words) {
+                // Update the cached copy of the words in the adapter.
+                adapter.setWeather(words);
+            }
+        });
+
+
+        /** Floating Button **/
+        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+        fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+                        .setAction("Action", null).show();
+            }
+        });
 
     }
 
@@ -137,62 +132,6 @@ public class MainActivity extends AppCompatActivity
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
-    }
-
-    /*
-    private void presentToUser() {
-        mAdapter = new MyRecyclerViewAdapter(getDataSet());
-        mRecyclerView.setAdapter(mAdapter);
-    }
-    */
-
-    /*private List<Weather> getDataSet() {
-        List <Weather> results = new ArrayList<>();
-        if (dados.size() != 0) {
-            for (Map.Entry<Integer, Weather> i : dados.entrySet()) {
-                results.add(i.getValue());
-            }
-        }
-        return results;
-    }
-    */
-
-
-    private void getData () {
-        Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl(BASE_URL)
-                .addConverterFactory(GsonConverterFactory.create())
-                .build();
-
-        WeatherApi weatherApi = retrofit.create(WeatherApi.class);
-
-        Call<Weather> call = weatherApi.getWeather(1110600);
-        Map<Integer, Weather> dados_aux = new HashMap<>();
-
-        call.enqueue(new Callback<Weather>() {
-            @Override
-            public void onResponse(Call<Weather> call, Response<Weather> response) {
-                Log.d(TAG, "onResponse: " + response.body().toString());
-                dataList = response.body().getData();
-
-                for (int i = 0; i<dataList.size(); i++){
-                    Log.d(TAG, "onResponse: " +
-                            "\nprecipitaProb: " + dataList.get(i).getPrecipitaProb() +
-                            "\ntMin: " + dataList.get(i).gettMin() +
-                            "\ntMax: " + dataList.get(i).gettMax());
-                };
-                TextView local = (TextView) findViewById(R.id.localAtual);
-                local.setText(""+response.body().getGlobalIdLocal());
-                TextView txt = (TextView) findViewById(R.id.textView);
-                txt.setText(""+dataList.get(dataList.size()-1).gettMax()+"ºC\t"+dataList.get(dataList.size()-1).gettMin()+"ºC");
-            }
-
-            @Override
-            public void onFailure(Call<Weather> call, Throwable t) {
-                Log.d(TAG, "onFailure: Something went wrong!");
-            }
-        });
-
     }
 
 }

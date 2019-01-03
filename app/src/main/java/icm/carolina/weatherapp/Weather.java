@@ -8,6 +8,7 @@ import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 @Entity
@@ -34,6 +35,17 @@ public class Weather {
     @SerializedName("dateUpdate")
     @Expose
     private String dateUpdate;
+
+    private Date lastRefresh;
+
+    public Weather(String owner, String country, List<Data> data, @NonNull int globalIdLocal, String dateUpdate, Date lastRefresh) {
+        this.owner = owner;
+        this.country = country;
+        this.data = data;
+        this.globalIdLocal = globalIdLocal;
+        this.dateUpdate = dateUpdate;
+        this.lastRefresh = lastRefresh;
+    }
 
     public String getOwner() {
         return owner;
@@ -85,5 +97,13 @@ public class Weather {
                 ", globalIdLocal=" + globalIdLocal +
                 ", dateUpdate='" + dateUpdate + '\'' +
                 '}';
+    }
+
+    public Date getLastRefresh() {
+        return lastRefresh;
+    }
+
+    public void setLastRefresh(Date lastRefresh) {
+        this.lastRefresh = lastRefresh;
     }
 }

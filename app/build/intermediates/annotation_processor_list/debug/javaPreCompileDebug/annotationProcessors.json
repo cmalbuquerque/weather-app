@@ -1,1 +1,1 @@
-["compiler-1.0.0.jar (android.arch.persistence.room:compiler:1.0.0)","compiler-1.1.0.jar (android.arch.lifecycle:compiler:1.1.0)"]
+["dagger-android-processor-2.17.jar (com.google.dagger:dagger-android-processor:2.17)","dagger-compiler-2.17.jar (com.google.dagger:dagger-compiler:2.17)","compiler-1.0.0.jar (android.arch.persistence.room:compiler:1.0.0)","compiler-1.1.0.jar (android.arch.lifecycle:compiler:1.1.0)"]

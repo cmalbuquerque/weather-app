@@ -20,5 +20,7 @@ public class WeatherViewModel extends AndroidViewModel {
 
     LiveData<List<Weather>> getmAllWeather() { return mAllWeather; }
 
+    LiveData<List<Weather>> getWeather(int globalIdLocal) { return mAllWeather; }
+
     public void saveWeather(Weather weather) { mRepository.saveWeather(weather); }
 }

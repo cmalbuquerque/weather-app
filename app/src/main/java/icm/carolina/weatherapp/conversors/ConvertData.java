@@ -1,4 +1,4 @@
-package icm.carolina.weatherapp;
+package icm.carolina.weatherapp.conversors;
 
 import android.arch.persistence.room.TypeConverter;
 
@@ -8,6 +8,8 @@ import com.google.gson.reflect.TypeToken;
 import java.lang.reflect.Type;
 import java.util.Collections;
 import java.util.List;
+
+import icm.carolina.weatherapp.Data;
 
 public class ConvertData {
 
