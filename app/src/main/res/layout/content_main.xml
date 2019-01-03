@@ -30,6 +30,16 @@
             android:text="Localidade"
             android:textAllCaps="true"
             android:textColor="#fff"
+            android:textSize="23sp" />
+
+        <TextView
+            android:id="@+id/estadoTempo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="-8dp"
+            android:text="Estado Tempo"
+            android:textColor="#fff"
             android:textSize="20sp" />
 
         <LinearLayout

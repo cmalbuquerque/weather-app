@@ -29,17 +29,4 @@ public class ConvertData {
         return gson.toJson(data);
     }
 
-    /*@TypeConverter
-    public static Data toData(String precipitaProb, String tMin, String tMax, String predWindDir, int idWeatherType, int classWindSpeed, String longitude, String latitude, String forecastDate) {
-        return (precipitaProb == null || tMin == null || tMax == null || predWindDir == null || longitude == null || forecastDate == null || latitude == null)?
-                null : new Data(precipitaProb, tMin, tMax, predWindDir, idWeatherType, classWindSpeed, longitude, latitude, forecastDate);
-    }
-    */
-
-    /*@TypeConverter
-    public static Long toTimestamp(Date date) {
-        return date == null ? null : date.getTime();
-    }
-    */
-
 }

@@ -10,7 +10,6 @@ import com.google.gson.GsonBuilder;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
-import java.util.HashMap;
 import java.util.List;
 import java.util.concurrent.Executor;
 import java.util.concurrent.Executors;
@@ -55,8 +54,6 @@ public class WeatherRepository {
 
         executor = Executors.newSingleThreadExecutor();
 
-
-
     }
 
     LiveData<List<WeatherPrev>> getAllWeatherLocal() {
@@ -64,10 +61,10 @@ public class WeatherRepository {
         return weatherDao.getAllWeatherLocal();
     }
 
-
     private void refreshWeather() {
         executor.execute(() -> {
             //for(Integer localId : list_aux) {
+
                 weatherApi.getWeather(1010500).enqueue(new Callback<WeatherPrev>() {
                     @Override
                     public void onResponse(Call<WeatherPrev> call, Response<WeatherPrev> response) {
@@ -75,7 +72,30 @@ public class WeatherRepository {
                         executor.execute(() -> {
                             WeatherPrev w = response.body();
                             w.setLastRefresh(new Date());
-                            weatherDao.insert(w);
+                            int atualType = w.getData().get(0).getIdWeatherType();
+                            executor.execute(() -> {
+                                weatherApi.getTypesWeather().enqueue(new Callback<WeatherType>() {
+                                    @Override
+                                    public void onResponse(Call<WeatherType> call, Response<WeatherType> response) {
+                                        WeatherType type = response.body();
+                                        List<Type> types_aux= type.getData();
+                                        for(Type t : types_aux) {
+                                            if (t.getIdWeatherType() == atualType) {
+                                                w.setEstadoTempo(t.getDescIdWeatherTypePT());
+                                                Log.i("TYPEVALUE", t.getDescIdWeatherTypePT()+"");
+                                                executor.execute(() -> {
+                                                    weatherDao.insert(w);
+                                                });
+                                            }
+                                        }
+                                    }
+
+                                    @Override
+                                    public void onFailure(Call<WeatherType> call, Throwable t) {
+
+                                    }
+                                });
+                            });
                         });
                     }
 

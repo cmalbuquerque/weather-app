@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity
     private WeatherViewModel viewModel;
 
     TextView city, tMax, tMin, tMax1, tMax2, tMax3, tMax4, tMin1, tMin2, tMin3, tMin4;
-    TextView day1, day2, day3, day4, percipitacao, windDir;
+    TextView day1, day2, day3, day4, percipitacao, windDir, estadoTempo;
     Spinner spinner;
 
     List<String> locaisList = new ArrayList<>();
@@ -58,6 +58,7 @@ public class MainActivity extends AppCompatActivity
         day4 = (TextView) findViewById(R.id.day4);
         percipitacao = (TextView) findViewById(R.id.probPrecipita);
         windDir = (TextView) findViewById(R.id.windDir);
+        estadoTempo = (TextView) findViewById(R.id.estadoTempo);
 
 
 
@@ -87,6 +88,8 @@ public class MainActivity extends AppCompatActivity
             this.day2.setText(weatherPrev.get(0).getData().get(2).getForecastDate());
             this.day3.setText(weatherPrev.get(0).getData().get(3).getForecastDate());
             this.day4.setText(weatherPrev.get(0).getData().get(4).getForecastDate());
+
+            this.estadoTempo.setText(weatherPrev.get(0).getEstadoTempo());
         }
     }
 

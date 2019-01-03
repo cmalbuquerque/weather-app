@@ -38,6 +38,10 @@ public class WeatherPrev {
 
     private Date lastRefresh;
 
+    private String estadoTempo;
+
+    private String localidade;
+
     public WeatherPrev(String owner, String country, List<Data> data, @NonNull int globalIdLocal, String dateUpdate, Date lastRefresh) {
         this.owner = owner;
         this.country = country;
@@ -105,5 +109,21 @@ public class WeatherPrev {
 
     public void setLastRefresh(Date lastRefresh) {
         this.lastRefresh = lastRefresh;
+    }
+
+    public String getEstadoTempo() {
+        return estadoTempo;
+    }
+
+    public void setEstadoTempo(String estadoTempo) {
+        this.estadoTempo = estadoTempo;
+    }
+
+    public String getLocalidade() {
+        return localidade;
+    }
+
+    public void setLocalidade(String localidade) {
+        this.localidade = localidade;
     }
 }

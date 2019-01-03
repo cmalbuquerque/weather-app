@@ -13,5 +13,5 @@ public interface WeatherApi {
     Call<WeatherLocal> getLocals();
 
     @GET("/open-data/weather-type-classe.json")
-    Call<WeatherPrev> getTypesWeather();
+    Call<WeatherType> getTypesWeather();
 }

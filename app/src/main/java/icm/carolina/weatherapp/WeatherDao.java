@@ -7,7 +7,6 @@ import android.arch.persistence.room.OnConflictStrategy;
 import android.arch.persistence.room.Query;
 
 import java.util.Date;
-import java.util.HashMap;
 import java.util.List;
 
 
@@ -23,7 +22,6 @@ public interface WeatherDao {
 
     @Query("SELECT * from WeatherLocal ORDER BY globalIdLocal ASC")
     LiveData<List<WeatherLocal>> getLocal();
-
 
     @Query("SELECT * FROM WeatherPrev WHERE lastRefresh > :lastRefreshMax LIMIT 1")
     WeatherPrev hasWeather(Date lastRefreshMax);
