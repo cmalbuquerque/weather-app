@@ -24,7 +24,8 @@ public class MainActivity extends AppCompatActivity
 
     private WeatherViewModel viewModel;
 
-    TextView city, tMax, tMin;
+    TextView city, tMax, tMin, tMax1, tMax2, tMax3, tMax4, tMin1, tMin2, tMin3, tMin4;
+    TextView day1, day2, day3, day4, percipitacao, windDir;
     Spinner spinner;
 
     List<String> locaisList = new ArrayList<>();
@@ -39,78 +40,53 @@ public class MainActivity extends AppCompatActivity
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        /** Drawer Menu **/
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
-        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
-                this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
-        drawer.addDrawerListener(toggle);
-        toggle.syncState();
-
-        NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
-        navigationView.setNavigationItemSelectedListener(this);
-
-
-        /** RecyclerView
-        mRecyclerView = findViewById(R.id.my_recycler_view_results);
-
-        final WeatherAdapter adapter = new WeatherAdapter(this);
-        mRecyclerView.setAdapter(adapter);
-        mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
-
-        mWeatherViewModel = ViewModelProviders.of(this).get(WeatherViewModel.class);
-
-        mWeatherViewModel.getWeather(1010500).observe(this, new Observer<List<WeatherPrev>>() {
-            @Override
-            public void onChanged(@Nullable final List<WeatherPrev> words) {
-                // Update the cached copy of the words in the adapter.
-                adapter.setWeather(words);
-            }
-        });
-         */
-
-
-        /** Floating Button
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });**/
 
         city = (TextView) findViewById(R.id.titleMain);
         tMax = (TextView) findViewById(R.id.tempMax);
         tMin = (TextView) findViewById(R.id.tempMin);
+        tMax1 = (TextView) findViewById(R.id.tempMax1);
+        tMin1 = (TextView) findViewById(R.id.tempMin2);
+        tMax2 = (TextView) findViewById(R.id.tempMax2);
+        tMin2 = (TextView) findViewById(R.id.tempMin3);
+        tMax3 = (TextView) findViewById(R.id.tempMax3);
+        tMin3 = (TextView) findViewById(R.id.tempMin3);
+        tMax4 = (TextView) findViewById(R.id.tempMax4);
+        tMin4 = (TextView) findViewById(R.id.tempMin4);
+        day1 = (TextView) findViewById(R.id.day1);
+        day2 = (TextView) findViewById(R.id.day2);
+        day3 = (TextView) findViewById(R.id.day3);
+        day4 = (TextView) findViewById(R.id.day4);
+        percipitacao = (TextView) findViewById(R.id.probPrecipita);
+        windDir = (TextView) findViewById(R.id.windDir);
 
 
 
         viewModel = ViewModelProviders.of(this).get(WeatherViewModel.class);
-        //getLocais();
         viewModel.getWeatherLocalLiveData().observe(this, weather -> updateWeather(weather));
 
 
 
     }
 
-    /*private void getLocais() {
-        for(Local l : viewModel.getLocalLiveData().values())
-            locaisList.add(l.getLocal());
-        // Creating adapter for spinner
-        ArrayAdapter<String> dataAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, locaisList);
-
-        // Drop down layout style - list view with radio button
-        dataAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-
-        // attaching data adapter to spinner
-        spinner.setAdapter(dataAdapter);
-    }*/
-
     private void updateWeather(@Nullable List<WeatherPrev> weatherPrev){
         if (weatherPrev != null && weatherPrev.size()>0){
             this.city.setText(weatherPrev.get(0).getGlobalIdLocal()+"");
             this.tMax.setText(weatherPrev.get(0).getData().get(0).gettMax()+"º");
             this.tMin.setText(weatherPrev.get(0).getData().get(0).gettMin()+"º");
+            this.windDir.setText(weatherPrev.get(0).getData().get(0).getPredWindDir());
+            this.percipitacao.setText(weatherPrev.get(0).getData().get(0).getPrecipitaProb()+"%");
+
+            this.tMax1.setText(weatherPrev.get(0).getData().get(1).gettMax()+"º");
+            this.tMin1.setText(weatherPrev.get(0).getData().get(1).gettMin()+"º");
+            this.tMax2.setText(weatherPrev.get(0).getData().get(2).gettMax()+"º");
+            this.tMin2.setText(weatherPrev.get(0).getData().get(2).gettMin()+"º");
+            this.tMax3.setText(weatherPrev.get(0).getData().get(3).gettMax()+"º");
+            this.tMin3.setText(weatherPrev.get(0).getData().get(3).gettMin()+"º");
+            this.tMax4.setText(weatherPrev.get(0).getData().get(4).gettMax()+"º");
+            this.tMin4.setText(weatherPrev.get(0).getData().get(4).gettMin()+"º");
+            this.day2.setText(weatherPrev.get(0).getData().get(2).getForecastDate());
+            this.day3.setText(weatherPrev.get(0).getData().get(3).getForecastDate());
+            this.day4.setText(weatherPrev.get(0).getData().get(4).getForecastDate());
         }
     }
 

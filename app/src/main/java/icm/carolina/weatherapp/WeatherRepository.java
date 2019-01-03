@@ -55,42 +55,14 @@ public class WeatherRepository {
 
         executor = Executors.newSingleThreadExecutor();
 
-        //saveLocals();
 
 
     }
-
-    /*private void saveLocals() {
-        executor.execute(() -> {
-            weatherApi.getLocals().enqueue(new Callback<WeatherLocal>() {
-                @Override
-                public void onResponse(Call<WeatherLocal> call, Response<WeatherLocal> response) {
-                    executor.execute(() -> {
-                        WeatherLocal w = response.body();
-                        for (Local l : w.getData()) {
-                            mapa_locais.put(l.getGlobalIdLocal(), l);
-                            list_aux.add(l.getGlobalIdLocal());
-                        }
-                    });
-                }
-
-                @Override
-                public void onFailure(Call<WeatherLocal> call, Throwable t) {
-                }
-            });
-        });
-    }*/
-
 
     LiveData<List<WeatherPrev>> getAllWeatherLocal() {
         refreshWeather();
         return weatherDao.getAllWeatherLocal();
     }
-
-    /*LiveData<HashMap<Integer, WeatherLocal>> getLocals() {
-        saveLocals();
-        return mapa_locais;
-    }*/
 
 
     private void refreshWeather() {
