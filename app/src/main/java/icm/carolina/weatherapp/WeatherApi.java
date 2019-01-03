@@ -6,11 +6,12 @@ import retrofit2.http.Path;
 
 public interface WeatherApi {
 
-    String BASE_URL = "http://api.ipma.pt/";
-
     @GET("/open-data/forecast/meteorology/cities/daily/{localId}.json")
-    Call<Weather> getWeather(@Path("localId") int localId);
+    Call<WeatherPrev> getWeather(@Path("localId") int localId);
 
-    @GET("open-data/distrits-islands.json")
-    Call<Local> getLocais();
+    @GET("/open-data/distrits-islands.json")
+    Call<WeatherLocal> getLocals();
+
+    @GET("/open-data/weather-type-classe.json")
+    Call<WeatherPrev> getTypesWeather();
 }

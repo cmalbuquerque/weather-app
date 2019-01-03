@@ -7,6 +7,7 @@ import android.support.annotation.NonNull;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
+
 public class Local {
 
     @SerializedName("idRegiao")
@@ -40,6 +41,18 @@ public class Local {
     @SerializedName("longitude")
     @Expose
     private String longitude;
+
+
+    public Local(int idRegiao, String idAreaAviso, int idConcelho, @NonNull int globalIdLocal, String latitude, int idDistrito, String local, String longitude) {
+        this.idRegiao = idRegiao;
+        this.idAreaAviso = idAreaAviso;
+        this.idConcelho = idConcelho;
+        this.globalIdLocal = globalIdLocal;
+        this.latitude = latitude;
+        this.idDistrito = idDistrito;
+        this.local = local;
+        this.longitude = longitude;
+    }
 
     public int getIdRegiao() {
         return idRegiao;

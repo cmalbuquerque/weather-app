@@ -11,10 +11,11 @@ import android.os.AsyncTask;
 import android.support.annotation.NonNull;
 
 import icm.carolina.weatherapp.conversors.ConvertData;
+import icm.carolina.weatherapp.conversors.ConvertLocal;
 import icm.carolina.weatherapp.conversors.DateConverter;
 
-@Database(entities = {Weather.class}, version = 1)
-@TypeConverters({ConvertData.class, DateConverter.class})
+@Database(entities = {WeatherPrev.class, WeatherLocal.class}, version = 1)
+@TypeConverters({ConvertData.class, DateConverter.class, ConvertLocal.class})
 public abstract class WeatherRoomDatabase extends RoomDatabase {
 
     public abstract WeatherDao weatherDao();

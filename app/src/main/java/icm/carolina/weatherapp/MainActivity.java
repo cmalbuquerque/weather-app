@@ -1,14 +1,8 @@
 package icm.carolina.weatherapp;
 
-import android.arch.lifecycle.Observer;
 import android.arch.lifecycle.ViewModelProviders;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
-import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
@@ -17,14 +11,23 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Spinner;
+import android.widget.TextView;
+
+import java.util.ArrayList;
 import java.util.List;
 
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
-    private RecyclerView mRecyclerView;
-    private WeatherViewModel mWeatherViewModel;
+
+    private WeatherViewModel viewModel;
+
+    TextView city, tMax, tMin;
+    Spinner spinner;
+
+    List<String> locaisList = new ArrayList<>();
 
 
     @Override
@@ -47,7 +50,7 @@ public class MainActivity extends AppCompatActivity
         navigationView.setNavigationItemSelectedListener(this);
 
 
-        /** RecyclerView */
+        /** RecyclerView
         mRecyclerView = findViewById(R.id.my_recycler_view_results);
 
         final WeatherAdapter adapter = new WeatherAdapter(this);
@@ -56,16 +59,17 @@ public class MainActivity extends AppCompatActivity
 
         mWeatherViewModel = ViewModelProviders.of(this).get(WeatherViewModel.class);
 
-        mWeatherViewModel.getWeather(1010500).observe(this, new Observer<List<Weather>>() {
+        mWeatherViewModel.getWeather(1010500).observe(this, new Observer<List<WeatherPrev>>() {
             @Override
-            public void onChanged(@Nullable final List<Weather> words) {
+            public void onChanged(@Nullable final List<WeatherPrev> words) {
                 // Update the cached copy of the words in the adapter.
                 adapter.setWeather(words);
             }
         });
+         */
 
 
-        /** Floating Button **/
+        /** Floating Button
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -73,8 +77,41 @@ public class MainActivity extends AppCompatActivity
                 Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
             }
-        });
+        });**/
 
+        city = (TextView) findViewById(R.id.titleMain);
+        tMax = (TextView) findViewById(R.id.tempMax);
+        tMin = (TextView) findViewById(R.id.tempMin);
+
+
+
+        viewModel = ViewModelProviders.of(this).get(WeatherViewModel.class);
+        //getLocais();
+        viewModel.getWeatherLocalLiveData().observe(this, weather -> updateWeather(weather));
+
+
+
+    }
+
+    /*private void getLocais() {
+        for(Local l : viewModel.getLocalLiveData().values())
+            locaisList.add(l.getLocal());
+        // Creating adapter for spinner
+        ArrayAdapter<String> dataAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, locaisList);
+
+        // Drop down layout style - list view with radio button
+        dataAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+
+        // attaching data adapter to spinner
+        spinner.setAdapter(dataAdapter);
+    }*/
+
+    private void updateWeather(@Nullable List<WeatherPrev> weatherPrev){
+        if (weatherPrev != null && weatherPrev.size()>0){
+            this.city.setText(weatherPrev.get(0).getGlobalIdLocal()+"");
+            this.tMax.setText(weatherPrev.get(0).getData().get(0).gettMax()+"º");
+            this.tMin.setText(weatherPrev.get(0).getData().get(0).gettMin()+"º");
+        }
     }
 
     @Override

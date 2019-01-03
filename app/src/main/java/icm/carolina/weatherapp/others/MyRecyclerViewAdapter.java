@@ -4,22 +4,19 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import java.util.Date;
 import java.util.List;
 
-import icm.carolina.weatherapp.Data;
 import icm.carolina.weatherapp.R;
-import icm.carolina.weatherapp.Weather;
+import icm.carolina.weatherapp.WeatherPrev;
 
 public class MyRecyclerViewAdapter extends RecyclerView
         .Adapter<MyRecyclerViewAdapter
         .DataObjectHolder> {
     private static String LOG_TAG = "MyRecyclerViewAdapter";
-    private List<Weather> mDataset;
+    private List<WeatherPrev> mDataset;
     private static MyClickListener myClickListener;
 
     public static class DataObjectHolder extends RecyclerView.ViewHolder
@@ -50,7 +47,7 @@ public class MyRecyclerViewAdapter extends RecyclerView
 
     }
 
-    public MyRecyclerViewAdapter(List<Weather> myDataset) {
+    public MyRecyclerViewAdapter(List<WeatherPrev> myDataset) {
         mDataset = myDataset;
     }
 

@@ -1159,7 +1159,6 @@ id mini
 id mtrl_child_content_container
 id mtrl_internal_children_alpha_tag
 id multiply
-id my_recycler_view_results
 id nav_camera
 id nav_gallery
 id nav_manage
@@ -1219,6 +1218,7 @@ id snackbar_text
 id snap
 id snapMargins
 id spacer
+id spinner
 id split_action_bar
 id spread
 id spread_inside
@@ -1235,6 +1235,8 @@ id tabMode
 id tag_transition_group
 id tag_unhandled_key_event_manager
 id tag_unhandled_key_listeners
+id tempMax
+id tempMin
 id text
 id text2
 id textDistrict
@@ -1252,6 +1254,7 @@ id textinput_helper_text
 id time
 id title
 id titleDividerNoCustom
+id titleMain
 id title_template
 id toolbar
 id top

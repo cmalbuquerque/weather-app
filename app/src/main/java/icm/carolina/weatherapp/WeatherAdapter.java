@@ -12,7 +12,7 @@ import java.util.List;
 public class WeatherAdapter extends RecyclerView.Adapter<WeatherAdapter.WeatherViewHolder> {
 
     private final LayoutInflater mInflater;
-    private List<Weather> mWeathers; // Cached copy of weathers
+    private List<WeatherPrev> mWeatherPrevs; // Cached copy of weathers
 
     WeatherAdapter(Context context) { mInflater = LayoutInflater.from(context); }
 
@@ -24,17 +24,17 @@ public class WeatherAdapter extends RecyclerView.Adapter<WeatherAdapter.WeatherV
 
     @Override
     public void onBindViewHolder(WeatherViewHolder holder, int position) {
-        if (mWeathers != null) {
-            Weather current = mWeathers.get(position);
+        if (mWeatherPrevs != null) {
+            WeatherPrev current = mWeatherPrevs.get(position);
             holder.weatherItemView.setText(current.getGlobalIdLocal());
         } else {
             // Covers the case of data not being ready yet.
-            holder.weatherItemView.setText("No Weather");
+            holder.weatherItemView.setText("No WeatherPrev");
         }
     }
 
-    void setWeather(List<Weather> weather){
-        mWeathers = weather;
+    void setWeather(List<WeatherPrev> weatherPrev){
+        mWeatherPrevs = weatherPrev;
         notifyDataSetChanged();
     }
 
@@ -42,8 +42,8 @@ public class WeatherAdapter extends RecyclerView.Adapter<WeatherAdapter.WeatherV
     // mWords has not been updated (means initially, it's null, and we can't return null).
     @Override
     public int getItemCount() {
-        if (mWeathers != null)
-            return mWeathers.size();
+        if (mWeatherPrevs != null)
+            return mWeatherPrevs.size();
         else return 0;
     }
 

@@ -4,23 +4,27 @@ import android.app.Application;
 import android.arch.lifecycle.AndroidViewModel;
 import android.arch.lifecycle.LiveData;
 
+import java.util.HashMap;
 import java.util.List;
+
 
 public class WeatherViewModel extends AndroidViewModel {
 
-    private WeatherRepository mRepository;
+    private WeatherRepository weatherRepo;
 
-    private LiveData<List<Weather>> mAllWeather;
 
-    public WeatherViewModel (Application application) {
+    public WeatherViewModel(Application application) {
         super(application);
-        mRepository = new WeatherRepository(application);
-        mAllWeather = mRepository.getAllWeather();
+        weatherRepo = new WeatherRepository(application);
     }
 
-    LiveData<List<Weather>> getmAllWeather() { return mAllWeather; }
+    public LiveData<List<WeatherPrev>> getWeatherLocalLiveData() {
+        return weatherRepo.getAllWeatherLocal();
+    }
 
-    LiveData<List<Weather>> getWeather(int globalIdLocal) { return mAllWeather; }
-
-    public void saveWeather(Weather weather) { mRepository.saveWeather(weather); }
+    /*public HashMap<Integer, Local> getLocalLiveData() {
+        return weatherRepo.getMapLocais();
+    }
+    */
 }
+
