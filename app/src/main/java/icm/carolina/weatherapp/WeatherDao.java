@@ -20,8 +20,11 @@ public interface WeatherDao {
     @Query("SELECT * from WeatherPrev ORDER BY globalIdLocal ASC")
     LiveData<List<WeatherPrev>> getAllWeatherLocal();
 
-    @Query("SELECT * from WeatherLocal ORDER BY globalIdLocal ASC")
-    LiveData<List<WeatherLocal>> getLocal();
+    //@Query("SELECT * from WeatherPrev ORDER BY globalIdLocal ASC")
+    //LiveData<String> getWeatherType(int idWeatherType);
+
+    @Query("SELECT localidade from WeatherPrev WHERE WeatherPrev.globalIdLocal = :globalIdLocal")
+    LiveData<String> getLocalidade(int globalIdLocal);
 
     @Query("SELECT * FROM WeatherPrev WHERE lastRefresh > :lastRefreshMax LIMIT 1")
     WeatherPrev hasWeather(Date lastRefreshMax);

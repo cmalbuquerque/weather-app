@@ -20,5 +20,9 @@ public class WeatherViewModel extends AndroidViewModel {
     public LiveData<List<WeatherPrev>> getWeatherLocalLiveData() {
         return weatherRepo.getAllWeatherLocal();
     }
+
+    /*public LiveData<String> getLocalidadeLiveData() {
+        return weatherRepo.getLocalidade();
+    }*/
 }
 

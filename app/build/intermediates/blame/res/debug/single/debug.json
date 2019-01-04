@@ -80,6 +80,10 @@
         "source": "/home/carolina/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/0521350e33f8c965648e6f10fdae28d6/res/drawable-xxhdpi-v4/abc_textfield_activated_mtrl_alpha.9.png"
     },
     {
+        "merged": "/home/carolina/AndroidStudioProjects/WeatherApp/app/build/intermediates/res/merged/debug/drawable-anydpi-v21_ic_cloud_black_24dp.xml.flat",
+        "source": "/home/carolina/AndroidStudioProjects/WeatherApp/app/build/generated/res/pngs/debug/drawable-anydpi-v21/ic_cloud_black_24dp.xml"
+    },
+    {
         "merged": "/home/carolina/AndroidStudioProjects/WeatherApp/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_ic_menu_paste_mtrl_am_alpha.png.flat",
         "source": "/home/carolina/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/0521350e33f8c965648e6f10fdae28d6/res/drawable-hdpi-v4/abc_ic_menu_paste_mtrl_am_alpha.png"
     },
@@ -114,6 +118,10 @@
     {
         "merged": "/home/carolina/AndroidStudioProjects/WeatherApp/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_design_ic_visibility.png.flat",
         "source": "/home/carolina/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/27d2dc1a05f423ae794a7a40b0320d35/res/drawable-xhdpi-v4/design_ic_visibility.png"
+    },
+    {
+        "merged": "/home/carolina/AndroidStudioProjects/WeatherApp/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_ac_unit_black_24dp.png.flat",
+        "source": "/home/carolina/AndroidStudioProjects/WeatherApp/app/build/generated/res/pngs/debug/drawable-xxhdpi/ic_ac_unit_black_24dp.png"
     },
     {
         "merged": "/home/carolina/AndroidStudioProjects/WeatherApp/app/build/intermediates/res/merged/debug/color-v23_abc_tint_default.xml.flat",
@@ -168,12 +176,20 @@
         "source": "/home/carolina/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/27d2dc1a05f423ae794a7a40b0320d35/res/layout/design_text_input_password_icon.xml"
     },
     {
+        "merged": "/home/carolina/AndroidStudioProjects/WeatherApp/app/build/intermediates/res/merged/debug/drawable-ldpi_ic_cloud_black_24dp.png.flat",
+        "source": "/home/carolina/AndroidStudioProjects/WeatherApp/app/build/generated/res/pngs/debug/drawable-ldpi/ic_cloud_black_24dp.png"
+    },
+    {
         "merged": "/home/carolina/AndroidStudioProjects/WeatherApp/app/build/intermediates/res/merged/debug/layout_abc_popup_menu_header_item_layout.xml.flat",
         "source": "/home/carolina/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/0521350e33f8c965648e6f10fdae28d6/res/layout/abc_popup_menu_header_item_layout.xml"
     },
     {
         "merged": "/home/carolina/AndroidStudioProjects/WeatherApp/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_ic_star_half_black_36dp.png.flat",
         "source": "/home/carolina/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/0521350e33f8c965648e6f10fdae28d6/res/drawable-xxhdpi-v4/abc_ic_star_half_black_36dp.png"
+    },
+    {
+        "merged": "/home/carolina/AndroidStudioProjects/WeatherApp/app/build/intermediates/res/merged/debug/drawable_raindrops_blue.png.flat",
+        "source": "/home/carolina/AndroidStudioProjects/WeatherApp/app/src/main/res/drawable/raindrops_blue.png"
     },
     {
         "merged": "/home/carolina/AndroidStudioProjects/WeatherApp/app/build/intermediates/res/merged/debug/drawable_abc_tab_indicator_material.xml.flat",
@@ -194,6 +210,10 @@
     {
         "merged": "/home/carolina/AndroidStudioProjects/WeatherApp/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_ic_menu_selectall_mtrl_alpha.png.flat",
         "source": "/home/carolina/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/0521350e33f8c965648e6f10fdae28d6/res/drawable-hdpi-v4/abc_ic_menu_selectall_mtrl_alpha.png"
+    },
+    {
+        "merged": "/home/carolina/AndroidStudioProjects/WeatherApp/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_cloud_black_24dp.png.flat",
+        "source": "/home/carolina/AndroidStudioProjects/WeatherApp/app/build/generated/res/pngs/debug/drawable-hdpi/ic_cloud_black_24dp.png"
     },
     {
         "merged": "/home/carolina/AndroidStudioProjects/WeatherApp/app/build/intermediates/res/merged/debug/layout_abc_list_menu_item_radio.xml.flat",
@@ -238,6 +258,10 @@
     {
         "merged": "/home/carolina/AndroidStudioProjects/WeatherApp/app/build/intermediates/res/merged/debug/anim_abc_popup_enter.xml.flat",
         "source": "/home/carolina/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/0521350e33f8c965648e6f10fdae28d6/res/anim/abc_popup_enter.xml"
+    },
+    {
+        "merged": "/home/carolina/AndroidStudioProjects/WeatherApp/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_ic_ac_unit_black_24dp.png.flat",
+        "source": "/home/carolina/AndroidStudioProjects/WeatherApp/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_ac_unit_black_24dp.png"
     },
     {
         "merged": "/home/carolina/AndroidStudioProjects/WeatherApp/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_textfield_default_mtrl_alpha.9.png.flat",
@@ -828,6 +852,10 @@
         "source": "/home/carolina/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/0521350e33f8c965648e6f10fdae28d6/res/drawable-xhdpi-v4/abc_list_selector_disabled_holo_light.9.png"
     },
     {
+        "merged": "/home/carolina/AndroidStudioProjects/WeatherApp/app/build/intermediates/res/merged/debug/drawable-ldpi_ic_ac_unit_black_24dp.png.flat",
+        "source": "/home/carolina/AndroidStudioProjects/WeatherApp/app/build/generated/res/pngs/debug/drawable-ldpi/ic_ac_unit_black_24dp.png"
+    },
+    {
         "merged": "/home/carolina/AndroidStudioProjects/WeatherApp/app/build/intermediates/res/merged/debug/drawable_abc_cab_background_top_material.xml.flat",
         "source": "/home/carolina/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/0521350e33f8c965648e6f10fdae28d6/res/drawable/abc_cab_background_top_material.xml"
     },
@@ -864,8 +892,16 @@
         "source": "/home/carolina/AndroidStudioProjects/WeatherApp/app/build/generated/res/pngs/debug/drawable-anydpi-v21/ic_wb_sunny_black_24dp.xml"
     },
     {
+        "merged": "/home/carolina/AndroidStudioProjects/WeatherApp/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_cloud_black_24dp.png.flat",
+        "source": "/home/carolina/AndroidStudioProjects/WeatherApp/app/build/generated/res/pngs/debug/drawable-mdpi/ic_cloud_black_24dp.png"
+    },
+    {
         "merged": "/home/carolina/AndroidStudioProjects/WeatherApp/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_design_ic_visibility_off.png.flat",
         "source": "/home/carolina/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/27d2dc1a05f423ae794a7a40b0320d35/res/drawable-xxhdpi-v4/design_ic_visibility_off.png"
+    },
+    {
+        "merged": "/home/carolina/AndroidStudioProjects/WeatherApp/app/build/intermediates/res/merged/debug/drawable_rain.png.flat",
+        "source": "/home/carolina/AndroidStudioProjects/WeatherApp/app/src/main/res/drawable/rain.png"
     },
     {
         "merged": "/home/carolina/AndroidStudioProjects/WeatherApp/app/build/intermediates/res/merged/debug/drawable-ldrtl-hdpi-v17_abc_ic_menu_cut_mtrl_alpha.png.flat",
@@ -992,6 +1028,10 @@
         "source": "/home/carolina/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/0521350e33f8c965648e6f10fdae28d6/res/drawable-xxhdpi-v4/abc_ic_menu_paste_mtrl_am_alpha.png"
     },
     {
+        "merged": "/home/carolina/AndroidStudioProjects/WeatherApp/app/build/intermediates/res/merged/debug/drawable_daycloudy.png.flat",
+        "source": "/home/carolina/AndroidStudioProjects/WeatherApp/app/src/main/res/drawable/daycloudy.png"
+    },
+    {
         "merged": "/home/carolina/AndroidStudioProjects/WeatherApp/app/build/intermediates/res/merged/debug/drawable-ldpi_ic_wb_sunny_black_24dp.png.flat",
         "source": "/home/carolina/AndroidStudioProjects/WeatherApp/app/build/generated/res/pngs/debug/drawable-ldpi/ic_wb_sunny_black_24dp.png"
     },
@@ -1104,6 +1144,10 @@
         "source": "/home/carolina/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/0521350e33f8c965648e6f10fdae28d6/res/drawable-xxhdpi-v4/abc_text_select_handle_right_mtrl_dark.png"
     },
     {
+        "merged": "/home/carolina/AndroidStudioProjects/WeatherApp/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_cloud_black_24dp.png.flat",
+        "source": "/home/carolina/AndroidStudioProjects/WeatherApp/app/build/generated/res/pngs/debug/drawable-xhdpi/ic_cloud_black_24dp.png"
+    },
+    {
         "merged": "/home/carolina/AndroidStudioProjects/WeatherApp/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_ic_star_half_black_36dp.png.flat",
         "source": "/home/carolina/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/0521350e33f8c965648e6f10fdae28d6/res/drawable-xxxhdpi-v4/abc_ic_star_half_black_36dp.png"
     },
@@ -1132,12 +1176,12 @@
         "source": "/home/carolina/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/27d2dc1a05f423ae794a7a40b0320d35/res/layout/design_navigation_item_header.xml"
     },
     {
-        "merged": "/home/carolina/AndroidStudioProjects/WeatherApp/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_textfield_search_activated_mtrl_alpha.9.png.flat",
-        "source": "/home/carolina/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/0521350e33f8c965648e6f10fdae28d6/res/drawable-mdpi-v4/abc_textfield_search_activated_mtrl_alpha.9.png"
-    },
-    {
         "merged": "/home/carolina/AndroidStudioProjects/WeatherApp/app/build/intermediates/res/merged/debug/layout_abc_dialog_title_material.xml.flat",
         "source": "/home/carolina/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/0521350e33f8c965648e6f10fdae28d6/res/layout/abc_dialog_title_material.xml"
+    },
+    {
+        "merged": "/home/carolina/AndroidStudioProjects/WeatherApp/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_textfield_search_activated_mtrl_alpha.9.png.flat",
+        "source": "/home/carolina/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/0521350e33f8c965648e6f10fdae28d6/res/drawable-mdpi-v4/abc_textfield_search_activated_mtrl_alpha.9.png"
     },
     {
         "merged": "/home/carolina/AndroidStudioProjects/WeatherApp/app/build/intermediates/res/merged/debug/layout_notification_template_big_media_narrow.xml.flat",
@@ -1170,6 +1214,10 @@
     {
         "merged": "/home/carolina/AndroidStudioProjects/WeatherApp/app/build/intermediates/res/merged/debug/color_abc_hint_foreground_material_dark.xml.flat",
         "source": "/home/carolina/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/0521350e33f8c965648e6f10fdae28d6/res/color/abc_hint_foreground_material_dark.xml"
+    },
+    {
+        "merged": "/home/carolina/AndroidStudioProjects/WeatherApp/app/build/intermediates/res/merged/debug/drawable_storm.png.flat",
+        "source": "/home/carolina/AndroidStudioProjects/WeatherApp/app/src/main/res/drawable/storm.png"
     },
     {
         "merged": "/home/carolina/AndroidStudioProjects/WeatherApp/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_btn_check_to_on_mtrl_015.png.flat",
@@ -1384,12 +1432,12 @@
         "source": "/home/carolina/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/27d2dc1a05f423ae794a7a40b0320d35/res/layout/design_navigation_item_subheader.xml"
     },
     {
-        "merged": "/home/carolina/AndroidStudioProjects/WeatherApp/app/build/intermediates/res/merged/debug/color_mtrl_chip_close_icon_tint.xml.flat",
-        "source": "/home/carolina/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/27d2dc1a05f423ae794a7a40b0320d35/res/color/mtrl_chip_close_icon_tint.xml"
-    },
-    {
         "merged": "/home/carolina/AndroidStudioProjects/WeatherApp/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_tab_indicator_mtrl_alpha.9.png.flat",
         "source": "/home/carolina/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/0521350e33f8c965648e6f10fdae28d6/res/drawable-xxhdpi-v4/abc_tab_indicator_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/home/carolina/AndroidStudioProjects/WeatherApp/app/build/intermediates/res/merged/debug/color_mtrl_chip_close_icon_tint.xml.flat",
+        "source": "/home/carolina/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/27d2dc1a05f423ae794a7a40b0320d35/res/color/mtrl_chip_close_icon_tint.xml"
     },
     {
         "merged": "/home/carolina/AndroidStudioProjects/WeatherApp/app/build/intermediates/res/merged/debug/color_abc_tint_spinner.xml.flat",
@@ -1432,6 +1480,10 @@
         "source": "/home/carolina/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/0521350e33f8c965648e6f10fdae28d6/res/drawable-xxxhdpi-v4/abc_ic_star_black_48dp.png"
     },
     {
+        "merged": "/home/carolina/AndroidStudioProjects/WeatherApp/app/build/intermediates/res/merged/debug/drawable-anydpi-v21_ic_ac_unit_black_24dp.xml.flat",
+        "source": "/home/carolina/AndroidStudioProjects/WeatherApp/app/build/generated/res/pngs/debug/drawable-anydpi-v21/ic_ac_unit_black_24dp.xml"
+    },
+    {
         "merged": "/home/carolina/AndroidStudioProjects/WeatherApp/app/build/intermediates/res/merged/debug/drawable-ldpi_ic_near_me_black_24dp.png.flat",
         "source": "/home/carolina/AndroidStudioProjects/WeatherApp/app/build/generated/res/pngs/debug/drawable-ldpi/ic_near_me_black_24dp.png"
     },
@@ -1472,12 +1524,12 @@
         "source": "/home/carolina/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/0521350e33f8c965648e6f10fdae28d6/res/drawable-mdpi-v4/abc_ic_star_half_black_36dp.png"
     },
     {
-        "merged": "/home/carolina/AndroidStudioProjects/WeatherApp/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_btn_radio_to_on_mtrl_000.png.flat",
-        "source": "/home/carolina/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/0521350e33f8c965648e6f10fdae28d6/res/drawable-xxxhdpi-v4/abc_btn_radio_to_on_mtrl_000.png"
-    },
-    {
         "merged": "/home/carolina/AndroidStudioProjects/WeatherApp/app/build/intermediates/res/merged/debug/drawable_design_bottom_navigation_item_background.xml.flat",
         "source": "/home/carolina/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/27d2dc1a05f423ae794a7a40b0320d35/res/drawable/design_bottom_navigation_item_background.xml"
+    },
+    {
+        "merged": "/home/carolina/AndroidStudioProjects/WeatherApp/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_btn_radio_to_on_mtrl_000.png.flat",
+        "source": "/home/carolina/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/0521350e33f8c965648e6f10fdae28d6/res/drawable-xxxhdpi-v4/abc_btn_radio_to_on_mtrl_000.png"
     },
     {
         "merged": "/home/carolina/AndroidStudioProjects/WeatherApp/app/build/intermediates/res/merged/debug/layout_abc_list_menu_item_checkbox.xml.flat",
@@ -1502,6 +1554,10 @@
     {
         "merged": "/home/carolina/AndroidStudioProjects/WeatherApp/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_ic_menu_cut_mtrl_alpha.png.flat",
         "source": "/home/carolina/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/0521350e33f8c965648e6f10fdae28d6/res/drawable-xxhdpi-v4/abc_ic_menu_cut_mtrl_alpha.png"
+    },
+    {
+        "merged": "/home/carolina/AndroidStudioProjects/WeatherApp/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_ac_unit_black_24dp.png.flat",
+        "source": "/home/carolina/AndroidStudioProjects/WeatherApp/app/build/generated/res/pngs/debug/drawable-mdpi/ic_ac_unit_black_24dp.png"
     },
     {
         "merged": "/home/carolina/AndroidStudioProjects/WeatherApp/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_textfield_search_default_mtrl_alpha.9.png.flat",
@@ -1804,12 +1860,12 @@
         "source": "/home/carolina/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/27d2dc1a05f423ae794a7a40b0320d35/res/drawable-anydpi-v21/design_ic_visibility_off.xml"
     },
     {
-        "merged": "/home/carolina/AndroidStudioProjects/WeatherApp/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_text_select_handle_middle_mtrl_light.png.flat",
-        "source": "/home/carolina/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/0521350e33f8c965648e6f10fdae28d6/res/drawable-xhdpi-v4/abc_text_select_handle_middle_mtrl_light.png"
-    },
-    {
         "merged": "/home/carolina/AndroidStudioProjects/WeatherApp/app/build/intermediates/res/merged/debug/anim_abc_tooltip_exit.xml.flat",
         "source": "/home/carolina/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/0521350e33f8c965648e6f10fdae28d6/res/anim/abc_tooltip_exit.xml"
+    },
+    {
+        "merged": "/home/carolina/AndroidStudioProjects/WeatherApp/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_text_select_handle_middle_mtrl_light.png.flat",
+        "source": "/home/carolina/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/0521350e33f8c965648e6f10fdae28d6/res/drawable-xhdpi-v4/abc_text_select_handle_middle_mtrl_light.png"
     },
     {
         "merged": "/home/carolina/AndroidStudioProjects/WeatherApp/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_btn_switch_to_on_mtrl_00012.9.png.flat",
@@ -1904,6 +1960,10 @@
         "source": "/home/carolina/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/27d2dc1a05f423ae794a7a40b0320d35/res/drawable/ic_mtrl_chip_checked_circle.xml"
     },
     {
+        "merged": "/home/carolina/AndroidStudioProjects/WeatherApp/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_ac_unit_black_24dp.png.flat",
+        "source": "/home/carolina/AndroidStudioProjects/WeatherApp/app/build/generated/res/pngs/debug/drawable-xhdpi/ic_ac_unit_black_24dp.png"
+    },
+    {
         "merged": "/home/carolina/AndroidStudioProjects/WeatherApp/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_scrubber_control_to_pressed_mtrl_000.png.flat",
         "source": "/home/carolina/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/0521350e33f8c965648e6f10fdae28d6/res/drawable-xxhdpi-v4/abc_scrubber_control_to_pressed_mtrl_000.png"
     },
@@ -1944,6 +2004,10 @@
         "source": "/home/carolina/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/0521350e33f8c965648e6f10fdae28d6/res/color/abc_tint_btn_checkable.xml"
     },
     {
+        "merged": "/home/carolina/AndroidStudioProjects/WeatherApp/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_cloud_black_24dp.png.flat",
+        "source": "/home/carolina/AndroidStudioProjects/WeatherApp/app/build/generated/res/pngs/debug/drawable-xxhdpi/ic_cloud_black_24dp.png"
+    },
+    {
         "merged": "/home/carolina/AndroidStudioProjects/WeatherApp/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_list_focused_holo.9.png.flat",
         "source": "/home/carolina/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/0521350e33f8c965648e6f10fdae28d6/res/drawable-xxhdpi-v4/abc_list_focused_holo.9.png"
     },
@@ -1974,6 +2038,10 @@
     {
         "merged": "/home/carolina/AndroidStudioProjects/WeatherApp/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_notification_bg_normal_pressed.9.png.flat",
         "source": "/home/carolina/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/978b99e2ada0091d00c0f07b0df37bed/res/drawable-hdpi-v4/notification_bg_normal_pressed.9.png"
+    },
+    {
+        "merged": "/home/carolina/AndroidStudioProjects/WeatherApp/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_ic_cloud_black_24dp.png.flat",
+        "source": "/home/carolina/AndroidStudioProjects/WeatherApp/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_cloud_black_24dp.png"
     },
     {
         "merged": "/home/carolina/AndroidStudioProjects/WeatherApp/app/build/intermediates/res/merged/debug/drawable-watch-v20_abc_dialog_material_background.xml.flat",
@@ -2056,6 +2124,10 @@
         "source": "/home/carolina/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/27d2dc1a05f423ae794a7a40b0320d35/res/animator/mtrl_btn_state_list_anim.xml"
     },
     {
+        "merged": "/home/carolina/AndroidStudioProjects/WeatherApp/app/build/intermediates/res/merged/debug/drawable_fog.png.flat",
+        "source": "/home/carolina/AndroidStudioProjects/WeatherApp/app/src/main/res/drawable/fog.png"
+    },
+    {
         "merged": "/home/carolina/AndroidStudioProjects/WeatherApp/app/build/intermediates/res/merged/debug/layout_abc_alert_dialog_title_material.xml.flat",
         "source": "/home/carolina/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/0521350e33f8c965648e6f10fdae28d6/res/layout/abc_alert_dialog_title_material.xml"
     },
@@ -2078,6 +2150,10 @@
     {
         "merged": "/home/carolina/AndroidStudioProjects/WeatherApp/app/build/intermediates/res/merged/debug/color_abc_secondary_text_material_light.xml.flat",
         "source": "/home/carolina/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/0521350e33f8c965648e6f10fdae28d6/res/color/abc_secondary_text_material_light.xml"
+    },
+    {
+        "merged": "/home/carolina/AndroidStudioProjects/WeatherApp/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_ac_unit_black_24dp.png.flat",
+        "source": "/home/carolina/AndroidStudioProjects/WeatherApp/app/build/generated/res/pngs/debug/drawable-hdpi/ic_ac_unit_black_24dp.png"
     },
     {
         "merged": "/home/carolina/AndroidStudioProjects/WeatherApp/app/build/intermediates/res/merged/debug/drawable_abc_ic_search_api_material.xml.flat",

@@ -601,20 +601,20 @@ public final class R {
         public static final int abc_textfield_search_default_mtrl_alpha = 0x7f070058;
         public static final int abc_textfield_search_material = 0x7f070059;
         public static final int abc_vector_test = 0x7f07005a;
-        public static final int notification_action_background = 0x7f070073;
-        public static final int notification_bg = 0x7f070074;
-        public static final int notification_bg_low = 0x7f070075;
-        public static final int notification_bg_low_normal = 0x7f070076;
-        public static final int notification_bg_low_pressed = 0x7f070077;
-        public static final int notification_bg_normal = 0x7f070078;
-        public static final int notification_bg_normal_pressed = 0x7f070079;
-        public static final int notification_icon_background = 0x7f07007a;
-        public static final int notification_template_icon_bg = 0x7f07007b;
-        public static final int notification_template_icon_low_bg = 0x7f07007c;
-        public static final int notification_tile_bg = 0x7f07007d;
-        public static final int notify_panel_notification_icon_bg = 0x7f07007e;
-        public static final int tooltip_frame_dark = 0x7f070082;
-        public static final int tooltip_frame_light = 0x7f070083;
+        public static final int notification_action_background = 0x7f070077;
+        public static final int notification_bg = 0x7f070078;
+        public static final int notification_bg_low = 0x7f070079;
+        public static final int notification_bg_low_normal = 0x7f07007a;
+        public static final int notification_bg_low_pressed = 0x7f07007b;
+        public static final int notification_bg_normal = 0x7f07007c;
+        public static final int notification_bg_normal_pressed = 0x7f07007d;
+        public static final int notification_icon_background = 0x7f07007e;
+        public static final int notification_template_icon_bg = 0x7f07007f;
+        public static final int notification_template_icon_low_bg = 0x7f070080;
+        public static final int notification_tile_bg = 0x7f070081;
+        public static final int notify_panel_notification_icon_bg = 0x7f070082;
+        public static final int tooltip_frame_dark = 0x7f070089;
+        public static final int tooltip_frame_light = 0x7f07008a;
     }
     public static final class id {
         private id() {}
@@ -711,19 +711,19 @@ public final class R {
         public static final int tag_transition_group = 0x7f0800c3;
         public static final int tag_unhandled_key_event_manager = 0x7f0800c4;
         public static final int tag_unhandled_key_listeners = 0x7f0800c5;
-        public static final int text = 0x7f0800d0;
-        public static final int text2 = 0x7f0800d1;
-        public static final int textSpacerNoButtons = 0x7f0800d4;
-        public static final int textSpacerNoTitle = 0x7f0800d5;
-        public static final int time = 0x7f0800de;
-        public static final int title = 0x7f0800df;
-        public static final int titleDividerNoCustom = 0x7f0800e0;
-        public static final int title_template = 0x7f0800e2;
-        public static final int top = 0x7f0800e4;
-        public static final int topPanel = 0x7f0800e5;
-        public static final int uniform = 0x7f0800ec;
-        public static final int up = 0x7f0800ee;
-        public static final int wrap_content = 0x7f0800f5;
+        public static final int text = 0x7f0800d4;
+        public static final int text2 = 0x7f0800d5;
+        public static final int textSpacerNoButtons = 0x7f0800d8;
+        public static final int textSpacerNoTitle = 0x7f0800d9;
+        public static final int time = 0x7f0800e2;
+        public static final int title = 0x7f0800e3;
+        public static final int titleDividerNoCustom = 0x7f0800e4;
+        public static final int title_template = 0x7f0800e6;
+        public static final int top = 0x7f0800e8;
+        public static final int topPanel = 0x7f0800e9;
+        public static final int uniform = 0x7f0800f0;
+        public static final int up = 0x7f0800f2;
+        public static final int wrap_content = 0x7f0800f9;
     }
     public static final class integer {
         private integer() {}

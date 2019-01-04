@@ -138,6 +138,12 @@
                 android:textColor="#fff"
                 android:textSize="16sp" />
 
+            <ImageView
+                android:id="@+id/tempoImage1"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/raindrops"/>
+
             <TextView
                 android:id="@+id/tempMax1"
                 android:layout_width="wrap_content"
@@ -175,6 +181,11 @@
                 android:text="Amanhã"
                 android:textColor="#fff"
                 android:textSize="16sp" />
+            <ImageView
+                android:id="@+id/tempoImage2"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/raindrops"/>
 
             <TextView
                 android:id="@+id/tempMax2"
@@ -213,6 +224,11 @@
                 android:text="Amanhã"
                 android:textColor="#fff"
                 android:textSize="16sp" />
+            <ImageView
+                android:id="@+id/tempoImage3"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/raindrops"/>
 
             <TextView
                 android:id="@+id/tempMax3"
@@ -251,6 +267,12 @@
                 android:text="Amanhã"
                 android:textColor="#fff"
                 android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/tempoImage4"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/raindrops"/>
 
             <TextView
                 android:id="@+id/tempMax4"
