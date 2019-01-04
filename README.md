@@ -12,7 +12,7 @@ Quando se abre a aplicação é possível ver o estado do tempo para o dia atual
 A aplicação tem a seguinte arquitetura de implementação, sendo que o repositório (WeatherRepository) gere como é que os dados são obtidos, ou seja, se vai buscar à API ou à base de dados local.
 Recorreu-se ao tutorial [The Missing Google Sample of Android “Architecture Components” Guide](https://proandroiddev.com/the-missing-google-sample-of-android-architecture-components-guide-c7d6e7306b8f) para perceber o funcionamento do repositório e a gestão da obtenção de dados,
 e ainda à [Lesson 14 do Android Developer Advanced Course Practicals](https://google-developer-training.github.io/android-developer-advanced-course-practicals/unit-6-working-with-architecture-components/lesson-14-room,-livedata,-viewmodel/14-1-a-room-livedata-viewmodel/14-1-a-room-livedata-viewmodel.html)
-![picture2](arquitetura.png)
+> ![picture2](arquitetura.png)
 - A ligação à API do IPMA e a obtenção dos seus dados: usando Retrofit2 e GSON
 - Criação da base de dados local: em SQLite usando Room
 - ViewModel usando LiveData
