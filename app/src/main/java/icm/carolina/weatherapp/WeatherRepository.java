@@ -61,53 +61,77 @@ public class WeatherRepository {
         return weatherDao.getAllWeatherLocal();
     }
 
+
+    private void refreshLocal() {
+        executor.execute(() -> {
+                weatherApi.getLocals().enqueue(new Callback<WeatherLocal>() {
+                    @Override
+                    public void onResponse(Call<WeatherLocal> call, Response<WeatherLocal> response) {
+                        WeatherLocal obj = response.body();
+                        for (Local l: obj.getData()) {
+                            executor.execute(() -> {
+                                //db.weatherDao().insert(l);
+                            });
+                        }
+                    }
+                    @Override
+                    public void onFailure(Call<WeatherLocal> call, Throwable t) {
+                    }
+                });
+        });
+    }
+
     private void refreshWeather() {
         executor.execute(() -> {
             //for(Integer localId : list_aux) {
-
-                weatherApi.getWeather(1010500).enqueue(new Callback<WeatherPrev>() {
-                    @Override
-                    public void onResponse(Call<WeatherPrev> call, Response<WeatherPrev> response) {
-                        //Toast.makeText(App.context, "Data refreshed from network !", Toast.LENGTH_LONG).show();
+            weatherApi.getWeather(1010500).enqueue(new Callback<WeatherPrev>() {
+                @Override
+                public void onResponse(Call<WeatherPrev> call, Response<WeatherPrev> response) {
+                    //Toast.makeText(App.context, "Data refreshed from network !", Toast.LENGTH_LONG).show();
+                    executor.execute(() -> {
+                        WeatherPrev w = response.body();
+                        w.setLastRefresh(new Date());
+                        int atualType = w.getData().get(0).getIdWeatherType();
                         executor.execute(() -> {
-                            WeatherPrev w = response.body();
-                            w.setLastRefresh(new Date());
-                            int atualType = w.getData().get(0).getIdWeatherType();
-                            executor.execute(() -> {
-                                weatherApi.getTypesWeather().enqueue(new Callback<WeatherType>() {
-                                    @Override
-                                    public void onResponse(Call<WeatherType> call, Response<WeatherType> response) {
-                                        WeatherType type = response.body();
-                                        List<Type> types_aux= type.getData();
-                                        for(Type t : types_aux) {
-                                            if (t.getIdWeatherType() == atualType) {
-                                                w.setEstadoTempo(t.getDescIdWeatherTypePT());
-                                                Log.i("TYPEVALUE", t.getDescIdWeatherTypePT()+"");
-                                                executor.execute(() -> {
-                                                    weatherDao.insert(w);
-                                                });
-                                            }
+                            weatherApi.getTypesWeather().enqueue(new Callback<WeatherType>() {
+                                @Override
+                                public void onResponse(Call<WeatherType> call, Response<WeatherType> response) {
+                                    WeatherType type = response.body();
+                                    List<Type> types_aux= type.getData();
+                                    for(Type t : types_aux) {
+                                        if (t.getIdWeatherType() == atualType) {
+                                            w.setEstadoTempo(t.getDescIdWeatherTypePT());
+                                            Log.i("TYPEVALUE", t.getDescIdWeatherTypePT()+"");
+                                            executor.execute(() -> {
+                                                weatherDao.insert(w);
+                                            });
                                         }
                                     }
+                                }
 
-                                    @Override
-                                    public void onFailure(Call<WeatherType> call, Throwable t) {
+                                @Override
+                                public void onFailure(Call<WeatherType> call, Throwable t) {
 
-                                    }
-                                });
+                                }
                             });
                         });
-                    }
+                    });
+                }
 
-                    @Override
-                    public void onFailure(Call<WeatherPrev> call, Throwable t) {
-                    }
-                });
+                @Override
+                public void onFailure(Call<WeatherPrev> call, Throwable t) {
+                }
+            });
 
             //}
-            });
+        });
     }
 
+
+    /*public LiveData<List<Local>> getAllLocal() {
+        refreshLocal();
+        return db.weatherDao().getAllLocals();
+    }*/
 
     private Date getMaxRefreshTime(Date currentDate){
         Calendar cal = Calendar.getInstance();
